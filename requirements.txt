@@ -1,0 +1,17 @@
+# Jupyter Notebook
+jupyter
+ipykernel
+
+# Data manipulation and analysis
+pandas
+numpy
+
+# Data visualization
+matplotlib
+seaborn
+
+# Machine Learning
+scikit-learn
+
+# Optional: statistical analysis
+scipy
