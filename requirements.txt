@@ -12,6 +12,7 @@ seaborn
 
 # Machine Learning
 scikit-learn
+joblib
 
 # Optional: statistical analysis
 scipy
