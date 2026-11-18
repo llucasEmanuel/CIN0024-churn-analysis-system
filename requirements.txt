@@ -16,3 +16,9 @@ joblib
 
 # Optional: statistical analysis
 scipy
+
+# Modelagem (Miniprojeto 2)
+xgboost
+optuna
+plotly
+shap

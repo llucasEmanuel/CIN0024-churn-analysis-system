@@ -26,7 +26,7 @@ Execute primeiro `notebooks/EDA.ipynb` e depois `notebooks/preprocessing.ipynb`,
 
 ## Resultados e arquivos gerados
 
-Após remover 20 duplicatas e 10 registros com cancelamento anterior à data-base, restam **4.990 clientes**: **3.493 no treino** e **1.497 no teste**, em uma divisão estratificada de 70%/30%. Os oito atributos de entrada resultam em 14 após a codificação.
+Após remover 20 duplicatas e 10 registros com cancelamento anterior à data-base, restam **4.990 clientes**: **3.493 no treino** e **1.497 no teste**, em uma divisão estratificada de 70%/30%. Os oito atributos de entrada continuam sendo oito após a codificação ordinal de contrato e pagamento; como nenhuma variável numérica apresentou distribuição normal no treino, nenhuma recebe `StandardScaler` e todas permanecem na escala original.
 
 O pré-processamento preserva o CSV original e exporta para `data/processed/`:
 
@@ -35,7 +35,7 @@ O pré-processamento preserva o CSV original e exporta para `data/processed/`:
 | `base_analitica.csv` | Base limpa com datas e atributos derivados; ainda contém ausências. |
 | `*_antes_imputacao.csv` | Treino e teste com as ausências preservadas. |
 | `*_imputado.csv` | Dados com ausências preenchidas. |
-| `*_preparado.csv` | Dados imputados, codificados e escalonados. |
+| `*_preparado.csv` | Dados imputados e codificados (ordinal), prontos para os modelos. |
 | `preprocessador_template.joblib` | Pipeline sem ajuste para os futuros modelos. |
 
 A imputação e o escalonamento são ajustados somente no treino. Para a futura validação cruzada, utilize `treino_antes_imputacao.csv` e o template dentro do pipeline com o modelo, reaprendendo os tratamentos em cada rodada. Os IDs e o alvo `churn` ficam fora dos preditores, e o teste permanece reservado para a avaliação final.
