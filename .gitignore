@@ -221,3 +221,6 @@ __marimo__/
 
 # Local database files
 data/*
+
+# Base tratada versionada (entregável 3 do Miniprojeto 2)
+!data/processed/
