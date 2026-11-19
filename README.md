@@ -2,6 +2,8 @@
 
 Projeto da disciplina Sistemas Inteligentes (CIn-UFPE) sobre o cancelamento de contratos (*churn*) de clientes de uma operadora de telecomunicações.
 
+Feito por: Cleber Lucas, Juliana Silva, Lucas Emanuel, Mauricio Andrey e Victória Pessoa.
+
 - **Miniprojeto 1 — Análise e Preparação dos Dados:** análise exploratória, limpeza e preparação da base.
 - **Miniprojeto 2 — Otimização Preditiva:** modelagem com Árvore de Decisão e XGBoost, com foco no recall da classe churn.
 
