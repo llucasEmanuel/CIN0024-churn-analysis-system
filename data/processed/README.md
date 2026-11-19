@@ -1,5 +1,8 @@
 # Dados preparados para previsao de churn
 
+- base_tratada.csv: ENTREGAVEL 3. Base final transformada (treino + teste), com
+  id_cliente, as 8 features preparadas, churn e a coluna conjunto (treino/teste).
+  E a uniao de treino_preparado.csv e teste_preparado.csv.
 - base_analitica.csv: base limpa, datas e atributos derivados; ainda contem ausencias.
 - *_antes_imputacao.csv: oito features com ausencias, id_cliente e alvo churn.
 - *_imputado.csv: valores preenchidos com parametros aprendidos no treino.
